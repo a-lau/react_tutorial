@@ -4,18 +4,20 @@ import './App.css';
 export default App;
 
 class App extends React.Component {
+  constructor() {
+    super()
+    this.state = { current_time: new Date().toLocaleTimeString() };
+    setInterval(this.tick.bind(this), 1000);
+  };
+  element = (
+      <div> this.setState( current_time: {new Date().toLocaleTimeString()} ) </div>
+    );
   render() {
     return (element);
   };
-  function tick() {
-    const element = (
-      <div>
-        <h1>Hello, world!</h1>
-        <h2>It is {new Date().toLocaleTimeString()}.</h2>
-      </div>
-    );
-    return (element);
-  }
-  setInterval(tick, 1000)
+  tick() {
+    this.setState( element /*current_time: {new Date().toLocaleTimeString()} */);
+  };
+  //setInterval(tick, 1000);
 };
 
