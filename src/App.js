@@ -18,7 +18,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    var intervalId = setInterval(this.tick, 1000); //stores intervalId to be accessed later
+    const intervalId = setInterval(this.tick, 1000); //stores intervalId to be accessed later
     this.setState({intervalId: intervalId});
   }
   
