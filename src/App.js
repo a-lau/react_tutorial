@@ -18,7 +18,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    var intervalId = setInterval(this.tick.bind(this), 1000); //stores intervalId to be accessed later
+    var intervalId = setInterval(this.tick, 1000); //stores intervalId to be accessed later
     this.setState({intervalId: intervalId});
   }
   
@@ -28,7 +28,7 @@ export default class App extends React.Component {
     clearInterval(this.state.intervalId);
   }
 
-  tick() {
+  tick = () => {
     this.setState( {current_time: new Date()} );
   }
 }
