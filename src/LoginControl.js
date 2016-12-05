@@ -1,4 +1,5 @@
 import React from 'react'
+//import Greeting from './Greetings'
 
 export default class LoginControl extends React.Component {
   constructor(props) {
@@ -56,9 +57,9 @@ export default class LoginControl extends React.Component {
 
     let button = null;
     if (isLoggedIn) {
-      button = (<this.LogoutButton onClick={this.handleLogoutClick()} />) ;
+      button = (<this.LogoutButton onClick={this.handleLogoutClick} />) ;
     } else {
-      button = (<this.LoginButton onClick={this.handleLoginClick()} />) ;
+      button = (<this.LoginButton onClick={this.handleLoginClick} />) ;
     }
 
     return (
