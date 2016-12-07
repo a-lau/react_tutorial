@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import App from './App';
-import LoginControl from './LoginControl';
+import Page from './Page';
 import './index.css';
 
 ReactDOM.render(
-  <LoginControl />,
+  <Page />,
   document.getElementById('root')
 );
