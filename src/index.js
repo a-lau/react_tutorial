@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import KeyLists from './KeyLists';
+import FlavorForm from './FlavorForm';
 import './index.css';
 
-const numbers = [1, 2, 3, 4, 5];
-
 ReactDOM.render(
-  <KeyLists numbers={numbers} />,
+  <FlavorForm />,
   document.getElementById('root')
 );
