@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Page from './Page';
+import KeyLists from './KeyLists';
 import './index.css';
 
 ReactDOM.render(
-  <Page />,
+  <KeyLists />,
   document.getElementById('root')
 );
